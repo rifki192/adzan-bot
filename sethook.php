@@ -5,7 +5,7 @@ require_once "config.php";
 try {
     $bot = new \TelegramBot\Api\Client($token);
 
-    print_r($bot->SetWebhook('https://bot.haynik.id/telegram/adzan/hook.php'));
+    print_r($bot->SetWebhook('HOOK_URL'));
 
 } catch (\TelegramBot\Api\Exception $e) {
     echo $e->getMessage();
